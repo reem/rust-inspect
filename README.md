@@ -1,4 +1,4 @@
-# Inspect
+# Inspect [![Build Status](https://secure.travis-ci.org/reem/rust-inspect.png?branch=master)](https://travis-ci.org/reem/rust-inspect)
 
 A lightweight library providing a very useful `inspect!` macro that
 logs meta information like the filename and line number in addition
