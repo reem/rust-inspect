@@ -1,6 +1,6 @@
-# Line Debug
+# Inspect
 
-A lightweight library providing a very useful `debug!` macro that
+A lightweight library providing a very useful `inspect!` macro that
 logs meta information like the filename and line number in addition
 to the expressions you debug and their results.
 
@@ -11,12 +11,12 @@ to the expressions you debug and their results.
 
 extern crate debug;
 #[phase(syntax, link)]
-extern crate line_debug;
+extern crate inspect;
 
 fn main() {
     let a = 7;
     let b = 4;
-    debug!(a, b, a + b);
+    inspect!(a, b, a + b);
     // => file.rs - 10: a = 7, b = 4, a + b = 11
 }
 ```

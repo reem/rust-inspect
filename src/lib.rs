@@ -1,4 +1,4 @@
-#![crate_id = "line_debug"]
+#![crate_id = "inspect"]
 #![deny(missing_doc)]
 #![feature(macro_rules)]
 
@@ -9,9 +9,9 @@
 //! For instance:
 //!
 //! let a = 7;
-//! debug!(a, a + 4) => file.rs - 2: a = 7, a + 4 = 11
+//! inspect!(a, a + 4) => file.rs - 2: a = 7, a + 4 = 11
 #[macro_export]
-macro_rules! debug(
+macro_rules! inspect(
     ($($a:expr),*) => {
         println!(
             "{} - {}: {}",
