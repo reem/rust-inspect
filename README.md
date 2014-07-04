@@ -10,20 +10,30 @@ to the expressions you debug and their results.
 #![feature(phase)]
 
 extern crate debug;
-#[phase(syntax, link)]
+#[phase(plugin, link)]
 extern crate inspect;
 
 fn main() {
-    let a = 7;
-    let b = 4;
+    let a = 7u;
+    let b = 4u;
     inspect!(a, b, a + b);
     // => file.rs - 10: a = 7, b = 4, a + b = 11
 }
 ```
 
-To use just clone, run make, then copy the desired binary from
-target/cpu-vendor-os
+## Install
+
+Add:
+
+```toml
+[dependencies.inspect]
+
+git = "https://github.com/reem/rust-inspect"
+```
+
+to your `Cargo.toml`.
 
 ## License
 
 MIT
+

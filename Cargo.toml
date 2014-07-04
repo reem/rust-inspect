@@ -1,0 +1,16 @@
+[project]
+
+name = "inspect"
+version = "0.1.0"
+authors = ["reem"]
+
+[[lib]]
+
+name = "inspect"
+path = "src/lib.rs"
+
+[[bin]]
+
+name = "basic"
+path = "examples/basic.rs"
+
