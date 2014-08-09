@@ -1,15 +1,15 @@
-#![crate_id = "inspect"]
 #![deny(missing_doc)]
 #![feature(macro_rules)]
 
 //! A lightweight library for quickly debugging rust code.
 
-//! Logs the file, line number, and expressions along with what they equal.
-//!
-//! For instance:
-//!
-//! let a = 7;
-//! inspect!(a, a + 4) => file.rs - 2: a = 7, a + 4 = 11
+/// Logs the file, line number, and expressions along with what they equal.
+///
+/// For instance:
+///
+/// let a = 7;
+/// inspect!(a, a + 4) => file.rs - 2: a = 7, a + 4 = 11
+///
 #[macro_export]
 macro_rules! inspect(
     ($($a:expr),*) => {
