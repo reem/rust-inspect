@@ -7,8 +7,10 @@
 ///
 /// For instance:
 ///
+/// ```ignore
 /// let a = 7;
-/// inspect!(a, a + 4) => file.rs - 2: a = 7, a + 4 = 11
+/// inspect!(a, a + 4); //=> file.rs - 2: a = 7, a + 4 = 11
+/// ```
 ///
 #[macro_export]
 macro_rules! inspect(
