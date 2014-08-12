@@ -9,8 +9,3 @@ authors = ["reem"]
 name = "inspect"
 path = "src/lib.rs"
 
-[[bin]]
-
-name = "basic"
-path = "examples/basic.rs"
-

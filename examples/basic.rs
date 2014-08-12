@@ -1,7 +1,7 @@
 #![feature(phase)]
 
 extern crate debug;
-#[phase(plugin, link)]
+#[phase(plugin)]
 extern crate inspect;
 
 fn main() {
@@ -9,3 +9,4 @@ fn main() {
     inspect!(a, a + 4, a - 3);
     // Logs: "hello.rs - 9: a = 7, a + 4 = 11, a - 3 = 4"
 }
+
