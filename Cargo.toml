@@ -4,7 +4,7 @@ name = "inspect"
 version = "0.1.0"
 authors = ["reem"]
 
-[[lib]]
+[lib]
 
 name = "inspect"
 path = "src/lib.rs"
