@@ -1,6 +1,5 @@
 #![feature(phase)]
 
-extern crate debug;
 #[phase(plugin)]
 extern crate inspect;
 

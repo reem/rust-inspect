@@ -19,7 +19,7 @@ macro_rules! inspect(
             "{} - {}: {}",
             file!(), line!(),
             format!(
-                concat!($(stringify!($a), " = {:?}, "),*), $($a),*
+                concat!($(stringify!($a), " = {}, "),*), $($a),*
             )
         );
     }
