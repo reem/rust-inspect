@@ -1,4 +1,4 @@
-#![deny(missing_doc)]
+#![deny(missing_docs)]
 #![feature(macro_rules)]
 
 //! A lightweight library for quickly debugging rust code.
