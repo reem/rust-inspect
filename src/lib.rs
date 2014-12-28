@@ -23,5 +23,4 @@ macro_rules! inspect(
             )
         );
     }
-)
-
+);
