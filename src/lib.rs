@@ -3,13 +3,20 @@
 
 //! A lightweight library for quickly debugging rust code.
 
-/// Logs the file, line number, and expressions along with what they equal.
+/// Logs the file, line number, and expressions along with their `Show` value.
 ///
-/// For instance:
+/// # Examples
 ///
-/// ```ignore
-/// let a = 7;
-/// inspect!(a, a + 4); //=> file.rs - 2: a = 7, a + 4 = 11
+/// ```no_run
+/// #![feature(phase)]
+///
+/// #[phase(plugin, link)]
+/// extern crate inspect;
+///
+/// fn main() {
+///     let a = 7u;
+///     inspect!(a, a + 4); //=> file.rs - 8: a = 7, a + 4 = 11
+/// }
 /// ```
 ///
 #[macro_export]
@@ -23,5 +30,4 @@ macro_rules! inspect(
             )
         );
     }
-)
-
+);
