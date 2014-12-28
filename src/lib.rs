@@ -3,9 +3,9 @@
 
 //! A lightweight library for quickly debugging rust code.
 
-/// Logs the file, line number, and expressions along with what they equal.
+/// Logs the file, line number, and expressions along with their `Show` value.
 ///
-/// For instance:
+/// # Examples
 ///
 /// ```no_run
 /// #![feature(phase)]
