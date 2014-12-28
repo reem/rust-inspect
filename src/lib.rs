@@ -15,7 +15,7 @@
 ///
 /// fn main() {
 ///     let a = 7u;
-///     inspect!(a, a + 4); //=> file.rs - 2: a = 7, a + 4 = 11
+///     inspect!(a, a + 4); //=> file.rs - 8: a = 7, a + 4 = 11
 /// }
 /// ```
 ///
