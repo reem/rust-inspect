@@ -1,11 +1,9 @@
 [project]
 
 name = "inspect"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["reem"]
-
-[lib]
-
-name = "inspect"
-path = "src/lib.rs"
+description = "Advanced logging for dumping expressions during debugging."
+repository = "https://github.com/reem/rust-inspect"
+license = "MIT"
 
