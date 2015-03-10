@@ -1,7 +1,7 @@
 [project]
 
 name = "inspect"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["reem"]
 description = "Advanced logging for dumping expressions during debugging."
 repository = "https://github.com/reem/rust-inspect"
