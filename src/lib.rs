@@ -1,5 +1,4 @@
 #![deny(missing_docs)]
-#![feature(macro_rules)]
 
 //! A lightweight library for quickly debugging rust code.
 
@@ -7,15 +6,12 @@
 ///
 /// # Examples
 ///
-/// ```no_run
-/// #![feature(phase)]
-///
-/// #[phase(plugin, link)]
-/// extern crate inspect;
-///
+/// ```
+/// # #[macro_use(inspect)]
+/// # extern crate inspect;
 /// fn main() {
 ///     let a = 7u;
-///     inspect!(a, a + 4); //=> file.rs - 8: a = 7, a + 4 = 11
+///     inspect!(a, a + 4); //=> file.rs - X: a = 7, a + 4 = 11
 /// }
 /// ```
 ///
